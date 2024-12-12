@@ -93,11 +93,12 @@ public class MyString {
     public static String randomStringOfLetters(int n) {
 
         String str = "";
-        for (int i = 0; i <= n ; i++) {
+        for (int i = 0; i < n ; i++) { // tinha errado coloquei <= mas comeca do 0
             char randomChar = (char) ('a' + (int) (Math.random()*26)); //'a' ponto de inicio ele sabe automaticamente comecar do a 
-            str += randomChar;
+            str = str + randomChar;
             
         }
+        
         return str;
     }
     
